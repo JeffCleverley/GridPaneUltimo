@@ -1,7 +1,7 @@
 <?php
 
 
-class GP_WU_Domain_Mapping_Hosting_support
+class GP_WU_Domain_Mapping_Hosting_support extends WU_Domain_Mapping_Hosting_Support
 {
 	public function __construct() {
 
@@ -97,4 +97,8 @@ class GP_WU_Domain_Mapping_Hosting_support
 
 }
 
-new GP_WU_Domain_Mapping_Hosting_Support;
+if ( ! method_exists('WU_Domain_Mapping_Hosting_Support','uses_gridpane')) {
+
+	new GP_WU_Domain_Mapping_Hosting_Support();
+
+};

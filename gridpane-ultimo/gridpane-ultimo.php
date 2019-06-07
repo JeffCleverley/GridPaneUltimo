@@ -14,4 +14,4 @@ function gridpane_integration_init() {
 
 	}
 }
-add_action( 'plugins_loaded', 'gridpane_integration_init' );
+add_action( 'plugins_loaded', 'gridpane_integration_init', 99);

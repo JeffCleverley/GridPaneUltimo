@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * All this is Dima really, I just made it a plugin
+ *
+ */
 
 class GP_WU_Domain_Mapping_Hosting_support extends WU_Domain_Mapping_Hosting_Support
 {

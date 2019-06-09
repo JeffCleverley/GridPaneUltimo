@@ -69,7 +69,7 @@ class GP_WU_Domain_Mapping_Hosting_support extends WU_Domain_Mapping_Hosting_Sup
 		}
 
 		$this->send_gridpane_api_request('add-domain', array(
-			'server_ip' => WU_GRIDPANE_SERVER_URL,
+			'server_ip' => WU_GRIDPANE_SERVER_ID,
 			'site_url' => WU_GRIDPANE_APP_ID,
 			'domain_url' => $domain
 		));
@@ -89,7 +89,7 @@ class GP_WU_Domain_Mapping_Hosting_support extends WU_Domain_Mapping_Hosting_Sup
 		}
 
 		$this->send_gridpane_api_request('delete-domain', array(
-			'server_ip' => WU_GRIDPANE_SERVER_URL,
+			'server_ip' => WU_GRIDPANE_SERVER_ID,
 			'site_url' => WU_GRIDPANE_APP_ID,
 			'domain_url' => $domain
 		));
